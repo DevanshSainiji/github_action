@@ -4,6 +4,8 @@ on:
 jobs:
   print: 
     runs-on: ubuntu-latest
+    default:
+      working-directory: backend
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
