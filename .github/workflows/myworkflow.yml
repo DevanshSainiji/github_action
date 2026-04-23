@@ -8,3 +8,13 @@ jobs:
       - name: Print Hello 
         run: echo "Hello World"
         run: node ../index.js
+
+name: Print Hello from js
+on:
+  push:
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello 2 
+        run: node ../index.js
