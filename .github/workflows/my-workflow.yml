@@ -1,0 +1,19 @@
+name: Print Hello World
+on:
+  push:
+jobs:
+  print: 
+    runs-on: ubuntu-latest
+    default:
+      working-directory: backend
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Print hello
+        run: echo "Hello World"
+      - name: Setup Node Version
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+      - name: Saurav
+        run:  node backend/my-app.js
