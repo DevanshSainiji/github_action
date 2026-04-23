@@ -6,6 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print hello
-        working-directory: backend
-        run: node my-app.js
+        run: node backend/my-app.js
     
